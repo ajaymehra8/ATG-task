@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- LINK OF STYLE CSS -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSTRAP ICON LINKS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="images/logo.png" alt="" class="logo" />
+      <div >
+        <i class="bi bi-search p-2" class="searchBar"></i>
+        <input
+          type="text"
+          placeholder="Search for your favorite groups in ATG"
+          class="nav-input"
+        />
+      </div>
+      <p onclick="showSignUp()">Create Account. <a href="#">It's Free</a></p>
+    </nav>
+
+    <!-- FIRST SECTION -->
+
+    <section class="home-section">
+      <div class="content">
+        <h1>Computer Engineering</h1>
+        <p>142,765 Computer Engineers follow this</p>
+      </div>
+      <div class="resHead d-flex justify-content-between w-100">
+      <button class="joinGroup">Join Group</button>
+      <button class="btn btn-primary mobSignIn" onclick="showSignUp()">Sign in</button>
+    </div>
+
+    </section>
+
+    <!-- SECOND SECTION -->
+
+    <section class="post-section p-5 pt-0">
+      <div
+        class="post-header w-100 p-4 pb-0 d-flex justify-content-between align-items-center"
+      >
+        <ul class="head-items d-flex gap-4 align-items-center">
+          <li class="head-item">
+            <a href="#" class="nav-link">All Posts(32)</a>
+          </li>
+          <li class="head-item"><a href="#" class="nav-link">Article</a></li>
+          <li class="head-item"><a href="#" class="nav-link">Event</a></li>
+          <li class="head-item"><a href="#" class="nav-link">Education</a></li>
+          <li class="head-item"><a href="#" class="nav-link">Job</a></li>
+        </ul>
+
+        <div class="d-flex gap-4">
+          <select class="options">
+            <option>Write a post</option>
+            <option>Option 1</option>
+            <option>Option 2</option>
+            <option>Option 3</option>
+          </select>
+
+          <button class="btn btn-primary joinBtn">
+            <i class="bi bi-people-fill"></i> Join Group
+          </button>
+        </div>
+      </div>
+
+      <div class="mobHeader w-100 d-flex justify-content-between gap-5 align-items-center">
+<p >Posts (32)</p>
+<select class="options  mb-3">
+  <option>All</option>
+  <option>Option 1</option>
+  <option>Option 2</option>
+  <option>Option 3</option>
+</select>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="post-content d-flex gap-5 justify-content-center p-5">
+        <div class="posts ">
+
+          <div class="card mb-5">
+            <img src="/images/postImages/post1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="post-type">✍ Article</h5>
+                <div class="d-flex">
+                <p class="post-desc">What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                <button class="btn postOption" onclick="showOption(event)"><i class="bi bi-three-dots"></i></button>
+              </div>
+              <ul class="optionOpen shadow">
+                <li>Edit</li>
+                <li>Report</li>
+                <li>Option 3</li>
+                        </ul>
+
+                <p class="sub-desc">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+                
+                <div class="last-part d-flex">
+        
+                    <div class="profile d-flex gap-2 justify-content-center align-items-center w-100">
+                        <img src="images/profilesImg/profile1.png" alt="" class="profile-img">
+                        <p class="user-name w-100">Sarthak Kamra</p>
+                    </div>
+        
+                    <div class="props d-flex gap-2 w-100">
+                        <p class="btn views"><i class="bi bi-eye"></i> 1.4k views</p>
+                        <a href="" class="btn p-2"><i class="bi bi-share-fill"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="card mb-5">
+          <img src="/images/postImages/post2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="post-type">🔬️ Education</h5>
+              <div class="d-flex">
+              <p class="post-desc">Tax Benefits for Investment under National Pension Scheme launched by Government</p>
+              <button class="btn postOption" onclick="showOption(event)"><i class="bi bi-three-dots"></i></button>
+
+            </div>
+            <ul class="optionOpen shadow">
+              <li>Edit</li>
+              <li>Report</li>
+              <li>Option 3</li>
+                      </ul>
+              <p class="sub-desc">I’ve worked in UX for the better part of a decade. F..</p>
+              
+              <div class="last-part d-flex">
+      
+                  <div class="profile d-flex gap-2 justify-content-center align-items-center w-100">
+                      <img src="images/profilesImg/profile2.png" alt="" class="profile-img">
+                      <p class="user-name w-100">Sarthak Kamra</p>
+                  </div>
+      
+                  <div class="props d-flex gap-2 w-100">
+                      <p class="btn views"><i class="bi bi-eye"></i> 1.4k views</p>
+                      <a href="" class="btn p-2"><i class="bi bi-share-fill"></i></a>
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+
+       
+
+           
+      <div class="card mb-5">
+        <img src="/images/postImages/post3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="post-type">🗓️ Meetup</h5>
+            <div class="d-flex">
+            <p class="post-desc">Finance & Investment Elite Social Mixer @Lujiazui</p>
+            <button class="btn postOption" onclick="showOption(event)"><i class="bi bi-three-dots"></i></button>
+
+          </div>
+          <ul class="optionOpen shadow">
+            <li>Edit</li>
+            <li>Report</li>
+            <li>Option 3</li>
+                    </ul>
+<div class="info d-flex justify-content-between align-items-center">
+  <p><i class="bi bi-calendar"></i> Fri, 12 Oct, 2018</p>
+  <p><i class="bi bi-geo-alt"></i> Ahmedabad, India</p>
+</div>
+            <button class="btn border w-100 mb-2 webBtn" >Visit Website</button>
+            <div class="last-part d-flex">
+    
+                <div class="profile d-flex gap-2 justify-content-center align-items-center w-100">
+                    <img src="images/profilesImg/profile3.png" alt="" class="profile-img">
+                    <p class="user-name w-100">Ronal Jones</p>
+                </div>
+    
+                <div class="props d-flex gap-2 w-100">
+                    <p class="btn views"><i class="bi bi-eye"></i> 1.4k views</p>
+                    <a href="" class="btn p-2"><i class="bi bi-share-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mb-5">
+      <div class="card-body">
+          <h5 class="post-type">💼️ Job</h5>
+          <div class="d-flex">
+          <p class="post-desc">Software Engineer</p>
+          <button class="btn postOption" onclick="showOption(event)"><i class="bi bi-three-dots"></i></button>
+        </div>
+
+        <ul class="optionOpen shadow">
+<li>Edit</li>
+<li>Report</li>
+<li>Option 3</li>
+        </ul>
+
+          <div class="info d-flex justify-content-between align-items-center">
+            <p><i class="bi bi-briefcase-fill"></i> Innovaccer Analytic</p>
+            <p><i class="bi bi-geo-alt"></i> Noida, India</p>
+          </div>
+          <button class="btn border w-100 mb-2 jobBtn" >Apply on timesjob</button>
+
+          <div class="last-part d-flex">
+  
+              <div class="profile d-flex gap-2 justify-content-center align-items-center w-100">
+                  <img src="images/profilesImg/profile4.png" alt="" class="profile-img">
+                  <p class="user-name w-100">Joseph Gray</p>
+              </div>
+  
+              <div class="props d-flex gap-2 w-100">
+                  <p class="btn views"><i class="bi bi-eye"></i> 1.4k views</p>
+                  <a href="" class="btn p-2"><i class="bi bi-share-fill"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+
+        </div>
+
+        <div class="location">
+          <p class="location-text">
+            <i class="bi bi-geo-alt"></i> Noida, India
+            <i class="bi bi-pencil-fill pencil-icon"></i>
+          </p>
+
+          <p class="location-desc">
+            <i class="bi bi-info-circle"></i> Your location will help us serve
+            better and extend a personalised experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signup PAGE -->
+    <section class="signup border pb-2">
+
+<div class="head d-flex justify-content-center">
+  <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+  <button class="btn" onClick="hidePage()">X</button>
+</div>
+
+<div class="content d-flex justify-content-between align-items-center p-5 pb-0 w-100">
+  <h3>Create Account</h3>
+<p>Already have an account? <a href="#" onclick="showLogin()">Sign In</a></p>
+</div>
+
+<div class="mobContent p-5 pb-0 pt-3 w-100">
+  <h3>Create Account</h3>
+<button class="cutBtn" onClick="hidePage()">X</button>
+</div>
+
+<div class="signup-form  p-0 pt-2 d-flex justify-content-between">
+  <div class="form">
+   
+    <form class="d-flex flex-column signup-form">
+
+<div class="forName d-flex">
+  <input type="text" placeholder="First Name">
+  <input type="text" placeholder="Last Name" class="lastName">
+</div>
+
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<input type="text" placeholder="Confirm Password" class="conPassword">
+<div class="signIn-div d-flex justify-content-between align-items-center p-0 ">
+
+  <button class="btn btn-primary mt-3 form-btn signIn-btn">Create Account</button>
+<a href="#" class="nav-link mt-3 mobLink" onclick="showLogin()">or, Sign in</a>
+
+</div>
+<button class="btn  mt-3 form-btn border">Sign up with Facebook</button>
+<button class="btn  mt-3 form-btn border">Sign up with Google</button>
+
+    </form>
+</div>
+
+<img src="./images/signup.png" alt="">
+</div>
+    </section>
+
+    <!-- LOGIN PAGE -->
+    
+    <section class="login  d-flex align-items-center flex-column border">
+      <div class="head d-flex justify-content-center">
+        <p>Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+        <button class="btn" onClick="hidePage()">X</button>
+      </div>
+
+      <div class="content d-flex justify-content-between align-items-center p-5 pb-0 pt-3 w-100">
+        <h3>Sign In</h3>
+      <p>Don't have an account yet? <a href="#" onclick="showSignUp()">Create new for free</a></p>
+      </div>
+
+      <div class="mobContent p-5 pb-0 pt-3 w-100">
+        <h3>Sign In</h3>
+<button class="cutBtn" onclick="hidePage()">X</button>
+      </div>
+
+      <div class="signup-form w-100 p-5 pt-2 d-flex justify-content-between">
+
+      <form class="d-flex flex-column signup-form">
+
+        
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password" class="conPassword">
+        
+        <div class="signIn-div d-flex justify-content-between align-items-center p-0 ">
+          <button class="btn btn-primary mt-3 form-btn signIn-btn">Sign in</button>
+<a href="#" class="nav-link mt-3 mobLink" onclick="showSignUp()">or, Create Account</a>
+        </div>
+
+        <button class="btn  mt-3 form-btn border">Sign up with Facebook</button>
+        <button class="btn  mt-3 form-btn border ">Sign up with Google</button>
+        
+            </form>
+            <img src="./images/signup.png" alt="">
+            </div>
+
+    </section>
+
+
+    <!-- BOOTSTRAP JS LINK -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- My JS LINK -->
+    <script src="./index.js"></script>
+  </body>
+</html>
