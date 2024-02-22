@@ -271,7 +271,12 @@ display: none;
     background: transparent;
     padding-top: 10px;
 }
-
+.icon{
+    margin-right: 20px;
+}
+.bi-facebook{
+    color: #2F6CE5;
+}
 /* toggle class */
 .showPage{
     visibility: visible;
