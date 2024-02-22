@@ -156,11 +156,11 @@ border-radius: 50%;
 /* LOGIN PAGE */
 
 .login,.signup{
-width: clamp(370px,60%,1000px);
+width: clamp(800px,60%,1000px);
 min-height: 70%;
 visibility: hidden;
 position: absolute;
-top: 80%;
+top: 70%;
 left: 60%;
 transform: translate(-60%, -70%);
 background-color: #fff;
@@ -195,14 +195,14 @@ background: gray;
 
 }
 .signup-form .forName input{
-    width: clamp(75px,15vw,175px);
+    width: clamp(150px,15vw,175px);
 
 }
 .signup-form input{
     border: 1px solid #d9d9db;
     outline: none;
     border-bottom: none;
-    width: clamp(150px,30vw,350px);
+    width: clamp(300px,30vw,350px);
     padding: 10px 15px;
     background: #F7F8FA;
 }
@@ -211,7 +211,7 @@ background: gray;
 
 }
 .form-btn,.signIn-btn{
-    width: clamp(150px,30vw,350px);
+    width: clamp(300px,30vw,350px);
 }
 .mobContent{
     display: none;
